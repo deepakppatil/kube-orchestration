@@ -1,0 +1,11 @@
+# Spring Boot Demo Initialization example with k8s
+
+## Versions Used
+- Spring Boot - 2.2.0-M1
+- H2 Database - 1.4.197
+
+## Configuration
+`spring.main.lazy-initialization` is set to `false` by default. This can be set to `true` to enable Lazy Initialization in the Spring Boot Project.
+
+## Alternatives
+- `http://localhost:8080/demo` - Uses `DemoController` and `DemoService` which can be marked manually as `@Demo` for specific Beans
