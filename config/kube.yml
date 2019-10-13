@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+   name: k8s-service-demo
+spec:
+   replicas: 3
+   template:
+      metadata:
+         labels:
+            app: k8s-service-demo
+      spec:
+         containers:
+         -  name: k8s-service-demo
+            image: gcr.io/k8s-service-demo/kube-orchestration:0.0.1
+            ports:
+            -  containerPort: 8080

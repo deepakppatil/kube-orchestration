@@ -11,6 +11,6 @@ public class DemoService {
     }
 
     public String hello() {
-        return "This is Springboot Demo Service hosted on k8....";
+        return "This is Springboot Demo Service hosted on k8....VERSION: 0.0.2";
     }
 }

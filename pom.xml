@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.k8s.demo</groupId>
     <artifactId>kube-orchestration</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>kube-orchestratio</name>
     <description>Demo project for k8s with Spring Boot</description>
 
