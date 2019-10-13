@@ -35,6 +35,7 @@ Table of Contents
          * [Dependencies](#dependecies)
          * [Configuration](#configuration)
          * [Alternatives](#alternatives)
+      * [References]
 
 ## Prerequisite
 Using gcloud shell, configure following properties
@@ -199,3 +200,8 @@ As an example, you could have two different manifests checked into Git: a GA tag
 
 ### Alternatives
 - `http://localhost:8080/demo` - Uses `DemoController` and `DemoService` which can be marked manually as `@Demo` for specific Beans
+
+## References
+
+https://kubernetes.io/docs/reference/kubectl/cheatsheet
+
