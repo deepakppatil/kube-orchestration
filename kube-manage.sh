@@ -136,12 +136,9 @@ function rolling {
 
 function blue_green {
 	print_msg "Blue green strategy is being applied..." 2 1 | echolog;
-	kubectl apply -f config/kube-deployment-blue-v1.yml
-	kubectl apply -f config/kube-service-blue-v1.yml
-	kubectl apply -f config/kube-deployment-green-v2.yml
-	kubectl apply -f config/kube-service-green-v2.yml
-	kubectl apply -f config/kube-deployment-blue-v2.yml
-	kubectl apply -f config/kube-service-blue-v2.yml
+	kubectl apply -f config/kube-blue.yml
+	kubectl apply -f config/kube-green.yml
+	kubectl apply -f config/kube-service-bluegreen.yml
 	kubectl delete deployment.apps/k8s-service-demo-0.0.1 service/k8s-service-demo-green
 	print_msg "Blue Green strategy applied!" 3 1 | echolog;
 }

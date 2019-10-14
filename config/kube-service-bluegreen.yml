@@ -4,7 +4,7 @@ metadata:
    name: k8s-service-demo
    labels:
       name: k8s-service-demo
-      version: 0.0.2
+      version: "0.0.2"
 spec:
    ports:
    -  port: 8080
@@ -12,5 +12,5 @@ spec:
       protocol: TCP
    selector:
       app: k8s-service-demo
-      version: 0.0.2
+      version: "0.0.2"
    type: LoadBalancer
