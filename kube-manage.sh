@@ -145,6 +145,9 @@ function blue_green {
 
 function canary {
 	print_msg "Canary startegy is being applied..." 2 1 | echolog;
+	kubectl apply -f config/kube-blue.yml
+	kubectl apply -f config/kube-green.yml
+	kubectl apply -f config/kube-service-canary.yml	
 	print_msg "Canary strategy applied!" 3 1 | echolog;
 }
 
